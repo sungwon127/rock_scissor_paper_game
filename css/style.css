@@ -1,0 +1,44 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, select, textarea, button {margin: 0;padding: 0;font-size: 12px;line-height: 120%;font-family: '돋움',dotum,Dotum,Sans-serif;color: .666;}
+ul, ol {list-style:none;}
+img {border:none;}
+a {text-decoration: none;}
+h1 {text-align:center;margin:30px auto;font-size:36px;font-weight:bold;font-family:'Malgun Gothic';color:#000;}
+.randomBoxWrap {width:330px;height:330px;margin:0 auto;position:relative;}
+.randomBox {width:200px;height:167px;margin:0 auto;overflow:hidden;position:absolute;margin-top:50px;left: 67px;top: 25px;}
+.randomBoxWrap:before {
+	position:absolute;
+	top:0;
+	left:0;
+	content:'';
+	display:block;
+	width:300px;height:300px;border-radius:50%;border:15px solid #f35626;-webkit-animation: hue 5s infinite linear;
+}
+.randomBox li {text-indent:-9999px;position:absolute;top:0;left:0;width:200px;height:167px;background-color:#fff;background-image:url('../img/random_bg.png');background-repeat:no-repeat;}
+.randomBox li.on {z-index:1;background-position-y:-167px;}
+.btnWrap {overflow:hidden;text-align:center;margin-top:50px}
+.btnWrap > button {cursor:pointer;margin:0 10px;font-size:0;display:inline-block;text-indent:-9999px;border:0;width:100px;height:100px;background-size:100%}
+.btn01 {background:url('../img/btn01.png') center no-repeat;}
+.btn02 {background:url('../img/btn02.png') center no-repeat;}
+.btn03 {background:url('../img/btn03.png') center no-repeat;}
+.resetBtn {cursor:pointer;margin:0 auto;width:100px;height:40px;color: #fff;background: #767676;border:0;font-size:14px;display:block;font-weight:bold;margin-top:50px}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.btnWrap > button.on,.btnWrap > button:hover{cursor:pointer;transform:scale(0.95);-o-transform:scale(0.95);-moz-transform:scale(0.95);-webkit-transform:scale(0.95);transition: transform .1s;  -o-transition: transform .1s;-moz-transition: transform .1s;-webkit-transition: transform .1s;}
+
+.logWrap {width:400px;height:200px;border:1px solid #000;margin:0 auto;margin-top:20px;padding:10px;box-sizing:border-radius;}
+.coinWrap {text-align:center;}
+.coinWrap p {font-size:20px;line-height:2}
+.coinWrap p.bu{font-size:16px;font-weight:bold}
+.coinWrap > div {margin-top:20px}
+.coinWrap input {width:80px;height:40px;text-align:center;font-size:16px;font-weight:bold}
+.gameStartBtn {display:block;margin-top:20px;margin:30px auto;cursor:pointer;width:120px;height:40px;color: #fff;background: #767676;border:0;font-size:14px;display:block;font-weight:bold;}
+.coinTxt p{text-align:center;font-size:16px;font-weight:bold;margin-bottom:30px;}
